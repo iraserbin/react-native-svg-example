@@ -1,9 +1,32 @@
 import React from 'react'
 import { View, Text } from 'react-native'
- 
+import Bower from './logos/bower.svg';
+
+const styles = {
+  logo: {
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  container: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    backgroundColor: '#efefef',
+  },
+  scrollView: {
+    width: '100%',
+  },
+  containerStyles: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+};
+
 const App = () => (
   <View>
-    <Text>Simple App</Text>
+    <Text>Simple App with Bower</Text>
+    <Bower style={styles.logo} />
   </View>
 )
 
