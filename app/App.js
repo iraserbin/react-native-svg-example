@@ -1,99 +1,51 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import Bower from './logos/bower.svg';
-
-const styles = {
-  logo: {
-    marginTop: 20,
-    marginBottom: 20,
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    backgroundColor: '#efefef',
-  },
-  scrollView: {
-    width: '100%',
-  },
-  containerStyles: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-};
+import Svg, {
+  Circle,
+  Ellipse,
+  G,
+  TSpan,
+  TextPath,
+  Path,
+  Polygon,
+  Polyline,
+  Line,
+  Rect,
+  Use,
+  Image,
+  Symbol,
+  Defs,
+  LinearGradient,
+  RadialGradient,
+  Stop,
+  ClipPath,
+  Pattern,
+  Mask,
+} from 'react-native-svg';
 
 const App = () => (
   <View>
-    <Text>Simple App with Bower</Text>
-    <Bower style={styles.logo} />
+    <Text>Simple App with SVG</Text>
+    <Svg height="50%" width="50%" viewBox="0 0 100 100">
+      <Circle
+        cx="50"
+        cy="50"
+        r="45"
+        stroke="blue"
+        strokeWidth="2.5"
+        fill="green"
+      />
+      <Rect
+        x="15"
+        y="15"
+        width="70"
+        height="70"
+        stroke="red"
+        strokeWidth="2"
+        fill="yellow"
+      />
+    </Svg>
   </View>
 )
 
 export default App
-
-/*
-import React, {Component} from 'react';
-import {SafeAreaView, ScrollView} from 'react-native';
-import Autocode from './logos/autocode.svg';
-import Bower from './logos/bower.svg';
-import Composer from './logos/composer.svg';
-import Drupal from './logos/drupal.svg';
-import Egghead from './logos/egghead.svg';
-import Ember from './logos/ember.svg';
-import Firefox from './logos/firefox.svg';
-import Hostgator from './logos/hostgator.svg';
-import Pug from './logos/pug.svg';
-import ReduxObservable from './logos/redux-observable.svg';
-import RubyMine from './logos/rubymine.svg';
-import Snyk from './logos/snyk.svg';
-import Stylelint from './logos/stylelint.svg';
-
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <SafeAreaView style={styles.container}>
-        <ScrollView
-          style={styles.scrollView}
-          contentContainerStyle={styles.containerStyles}>
-          <Bower style={styles.logo} />
-          <Snyk style={styles.logo} />
-          <Drupal style={styles.logo} />
-          <Composer style={styles.logo} />
-          <Ember style={styles.logo} />
-          <Autocode style={styles.logo} />
-          <Egghead style={styles.logo} />
-          <Hostgator style={styles.logo} />
-          <Pug style={styles.logo} />
-          <Stylelint style={styles.logo} />
-          <ReduxObservable style={styles.logo} />
-          <RubyMine style={styles.logo} />
-          <Firefox style={styles.logo} />
-        </ScrollView>
-      </SafeAreaView>
-    );
-  }
-}
-
-const styles = {
-  logo: {
-    marginTop: 20,
-    marginBottom: 20,
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    backgroundColor: '#efefef',
-  },
-  scrollView: {
-    width: '100%',
-  },
-  containerStyles: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-};
-*/
