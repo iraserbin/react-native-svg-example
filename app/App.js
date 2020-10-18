@@ -1,11 +1,15 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React from 'react'
+import { View, Text } from 'react-native'
+ 
+const App = () => (
+  <View>
+    <Text>Simple App</Text>
+  </View>
+)
 
+export default App
+
+/*
 import React, {Component} from 'react';
 import {SafeAreaView, ScrollView} from 'react-native';
 import Autocode from './logos/autocode.svg';
@@ -69,3 +73,4 @@ const styles = {
     alignItems: 'center',
   },
 };
+*/
