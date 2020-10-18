@@ -25,9 +25,9 @@ import Svg, {
 } from 'react-native-svg';
 
 const Component = () => (
-  <View width="400" height="400">
+  <View>
     <Text>Circle Rect</Text>
-    <Svg height="100" width="100" viewBox="0 0 100 100">
+    <Svg height="50%" width="50%" viewBox="0 0 100 100">
       <Circle
         cx="50"
         cy="50"
