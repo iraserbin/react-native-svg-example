@@ -27,7 +27,10 @@ import Svg, {
 const Component = () => (
   <View>
     <Text>Import Svg</Text>
-    <Svg></Svg>
+    <Svg height="50%" width="50%" viewBox="0 0 100 100">
+      <Circle />
+      <Rect />
+    </Svg>
   </View>
 )
 
