@@ -24,9 +24,9 @@ import Svg, {
   Mask,
 } from 'react-native-svg';
 
-const Component = (props, {qwe}) => (
+const Component = (props) => (
   <View width="400" height="400">
-    <Text>Circle Rect props={props} qwe={qwe} </Text>
+    <Text>Circle Rect props={props} </Text>
     <Svg height="50%" width="50%" viewBox="0 0 100 100">
       <Circle
         cx="50"
