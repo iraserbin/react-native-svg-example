@@ -24,7 +24,7 @@ import Svg, {
   Mask,
 } from 'react-native-svg';
 
-const Component = ({ style, width, height }) => (
+const Component = ({ style = {}, width = 10, height = 10 }) => (
   <View style={style}>
     <Text>width={width} height={height}</Text>
     <Svg width={width} height={height} viewBox="0 0 115 68">
