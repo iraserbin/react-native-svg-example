@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 
 const Component = () => (
   <View>
-    <Text>Cleaned Logo</Text>
+    <Text>Cleaned Logo from index</Text>
   </View>
 )
 
