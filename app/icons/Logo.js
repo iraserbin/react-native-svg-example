@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 
 import Svg, {
   Circle,
@@ -26,27 +26,6 @@ import Svg, {
 
 const Component = () => (
   <View>
-    <Text>Circle Rect</Text>
-    <Svg height="50%" width="50%" viewBox="0 0 100 100">
-      <Circle
-        cx="50"
-        cy="50"
-        r="45"
-        stroke="blue"
-        strokeWidth="2.5"
-        fill="green"
-      />
-      <Rect
-        x="15"
-        y="15"
-        width="70"
-        height="70"
-        stroke="red"
-        strokeWidth="2"
-        fill="yellow"
-      />
-    </Svg>
-
     <Svg width="115" height="68" viewBox="0 0 115 68">
       <Path
         d="M88.001 24.192V0h24.853L88.001 24.192zM63.148 25.5H86.04V1.308L63.15 25.5zM50.068 7.192V25.5h11.118l5.232-5.23L55.3 7.191h-5.232zm60.824-2.615l-7.849 7.846 11.119-6.538-3.27-1.308zM76.229 53.615l9.81-26.807H50.722l25.507 26.807zm9.81-22.884L75.575 61.46 86.039 68V30.73zm-37.28-17h-6.787l6.788-6.786v6.786z"
@@ -61,8 +40,6 @@ const Component = () => (
         fill="#518CFF"
       /> 
     </Svg>
-
-
   </View>
 )
 
