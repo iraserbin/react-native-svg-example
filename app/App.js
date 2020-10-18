@@ -4,7 +4,7 @@ import { Logo } from './icons/index'
 
 const App = () => (
   <View>
-    <Logo width="400" height="400" />
+    <Logo width="200" height="200" style={{width:300, height:300, backgroundColor: 'green'}} />
   </View>
 )
 
